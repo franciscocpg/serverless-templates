@@ -10,6 +10,13 @@ A nodejs using typescript project with AWS as provider.
 It uses jest as test framework and it has an opinonated configuration
 for linting using `ts-lint` and `tslint-eslint-rules`.
 
+### Installing
+
+```sh
+sls create -u https://github.com/franciscocpg/serverless-templates/tree/master/aws-nodejs-typescript --path aws-nodejs-typescript
+cd aws-nodejs-typescript
+yarn
+```
 
 ### Invoking locally
 
