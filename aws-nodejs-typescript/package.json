@@ -1,0 +1,48 @@
+{
+  "name": "node-faas",
+  "version": "1.0.0",
+  "description": "Serverless webpack example using Typescript",
+  "main": "handler.js",
+  "scripts": {
+    "lint": "tsc --skipLibCheck --noEmit && tslint 'src/**/*.ts'",
+    "test": "echo 'Running unit tests' && yarn --silent unit-tests",
+    "unit-tests": "LOG_LEVEL=off jest unit --coverage"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "testMatch": [
+      "**/?(*.)(spec|test).ts"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "disableSourceMapSupport": true
+      }
+    }
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.6"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.1",
+    "@types/jest": "^23.3.5",
+    "@types/node": "^8.0.57",
+    "jest": "^23.6.0",
+    "serverless": "1.32.0",
+    "serverless-webpack": "^5.1.1",
+    "ts-jest": "^23.10.4",
+    "ts-loader": "^4.2.0",
+    "tslint": "^5.11.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.5.0"
+  },
+  "author": "Francisco Guimarães",
+  "license": "MIT"
+}
