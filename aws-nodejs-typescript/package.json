@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "tsc --skipLibCheck --noEmit && tslint 'src/**/*.ts'",
     "test": "echo 'Running unit tests' && yarn --silent unit-tests",
-    "unit-tests": "LOG_LEVEL=off jest unit --coverage"
+    "unit-tests": "LOG_LEVEL=off jest unit --coverage && echo \"Coverage report generated at file://$(pwd)/coverage/lcov-report/index.html\""
   },
   "jest": {
     "moduleFileExtensions": [
