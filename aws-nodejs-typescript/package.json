@@ -1,8 +1,7 @@
 {
-  "name": "node-faas",
+  "name": "aws-nodejs-typescript",
   "version": "1.0.0",
-  "description": "Serverless webpack example using Typescript",
-  "main": "handler.js",
+  "description": "Serverless webpack template using Typescript",
   "scripts": {
     "lint": "tsc --skipLibCheck --noEmit && tslint 'src/**/*.ts'",
     "test": "echo 'Running unit tests' && yarn --silent unit-tests",
@@ -35,6 +34,7 @@
     "@types/node": "^8.0.57",
     "jest": "^23.6.0",
     "serverless": "1.32.0",
+    "serverless-offline": "^3.27.0",
     "serverless-webpack": "^5.1.1",
     "ts-jest": "^23.10.4",
     "ts-loader": "^4.2.0",
